@@ -3,8 +3,8 @@ using System.Collections;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int maxHeart = 100;
-    public int currentHeart;
+    public int maxHealth = 100;
+    public int currentHealth;
 
     public HealthBar healthBar;
 
@@ -14,9 +14,9 @@ public class PlayerHealth : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
     }
 
-    public void TakeDamage(int damage)       
+    public void TakeDamage(int damage)
     {
-            currentHealth -= damage;
-            healthBar.SetHealth(currentHealth);
-
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
     }
+}
