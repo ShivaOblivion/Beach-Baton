@@ -645,10 +645,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 97058354-2935-45b1-8956-7973e4d2418e
+  cloudProjectId: e265ef15-1e74-4519-b572-8ede6a461634
   framebufferDepthMemorylessMode: 0
-  projectName: Beach-Baton (1)
-  organizationId: beach-baton
+  projectName: Beach-Baton
+  organizationId: titilenne
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
