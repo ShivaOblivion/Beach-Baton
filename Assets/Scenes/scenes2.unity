@@ -8415,7 +8415,6 @@ GameObject:
   - component: {fileID: 940664172}
   - component: {fileID: 940664171}
   - component: {fileID: 940664175}
-  - component: {fileID: 940664176}
   m_Layer: 0
   m_Name: original-redim_23
   m_TagString: Untagged
@@ -8457,8 +8456,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 150
-  rb: {fileID: 940664171}
+  CooldownJump: 5
+  distanceCheckGrounded: 0.5
   jumpForce: 320
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!212 &940664173
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8551,22 +8554,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.46854162, y: 0.6709963}
   m_EdgeRadius: 0
---- !u!58 &940664176
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 940664170}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.017456349, y: -0.27462572}
-  serializedVersion: 2
-  m_Radius: 0.22391044
 --- !u!1 &1494170424
 GameObject:
   m_ObjectHideFlags: 0
@@ -8707,8 +8694,7 @@ GameObject:
   - component: {fileID: 1801227803}
   - component: {fileID: 1801227802}
   - component: {fileID: 1801227804}
-  - component: {fileID: 1801227805}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66516,18 +66502,3 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
---- !u!114 &1801227805
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801227800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 457c31d150648764e873535d2f49c0bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 0
-  rb: {fileID: 0}
-  jumpForce: 0
