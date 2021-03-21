@@ -213,7 +213,6 @@ GameObject:
   m_Component:
   - component: {fileID: 48741715}
   - component: {fileID: 48741717}
-  - component: {fileID: 48741716}
   m_Layer: 0
   m_Name: background layer3 (1)
   m_TagString: MainCamera
@@ -235,20 +234,6 @@ Transform:
   m_Father: {fileID: 922648240}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &48741716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 48741714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1360cb8deb16ed84eae7e89d8ceb76db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 1275260531}
-  parralaxEffect: 0.5
 --- !u!212 &48741717
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3836,7 +3821,6 @@ GameObject:
   m_Component:
   - component: {fileID: 306938708}
   - component: {fileID: 306938710}
-  - component: {fileID: 306938709}
   m_Layer: 0
   m_Name: background layer4 (1)
   m_TagString: MainCamera
@@ -3858,20 +3842,6 @@ Transform:
   m_Father: {fileID: 2007809835}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &306938709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 306938707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1360cb8deb16ed84eae7e89d8ceb76db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 1275260531}
-  parralaxEffect: 0.7
 --- !u!212 &306938710
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4369,7 +4339,6 @@ GameObject:
   m_Component:
   - component: {fileID: 424725982}
   - component: {fileID: 424725984}
-  - component: {fileID: 424725983}
   m_Layer: 0
   m_Name: background layer1 (2)
   m_TagString: MainCamera
@@ -4391,20 +4360,6 @@ Transform:
   m_Father: {fileID: 1477366124}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &424725983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 424725981}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1360cb8deb16ed84eae7e89d8ceb76db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 1275260531}
-  parralaxEffect: 0.3
 --- !u!212 &424725984
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10081,7 +10036,6 @@ GameObject:
   m_Component:
   - component: {fileID: 779324741}
   - component: {fileID: 779324743}
-  - component: {fileID: 779324742}
   m_Layer: 0
   m_Name: background layer3 (2)
   m_TagString: MainCamera
@@ -10103,20 +10057,6 @@ Transform:
   m_Father: {fileID: 922648240}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &779324742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 779324740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1360cb8deb16ed84eae7e89d8ceb76db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 1275260531}
-  parralaxEffect: 0.5
 --- !u!212 &779324743
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11221,7 +11161,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1226716291}
   - component: {fileID: 1226716293}
-  - component: {fileID: 1226716292}
   m_Layer: 0
   m_Name: background layer4 (2)
   m_TagString: MainCamera
@@ -11243,20 +11182,6 @@ Transform:
   m_Father: {fileID: 2007809835}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1226716292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1226716290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1360cb8deb16ed84eae7e89d8ceb76db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 1275260531}
-  parralaxEffect: 0.7
 --- !u!212 &1226716293
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11514,8 +11439,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -23.69, y: -8.85, z: -0.86}
   m_LocalScale: {x: 2.0239873, y: 2, z: 0}
-  m_Children:
-  - {fileID: 1831560594}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11822,7 +11746,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330493480}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -28.46, y: -10.44, z: 2}
+  m_LocalPosition: {x: 168.67, y: 3.77, z: 2}
   m_LocalScale: {x: 1.6187803, y: 1.4897487, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -34596,15 +34520,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1831560593}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.75, y: -5.87, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 93.75, y: -63.8, z: -0.86}
+  m_LocalScale: {x: 23.7, y: 46.4, z: 0}
   m_Children:
   - {fileID: 1477366124}
   - {fileID: 922648240}
   - {fileID: 2007809835}
-  m_Father: {fileID: 1275260536}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1831560595
 MonoBehaviour:
@@ -34958,7 +34882,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1991736520}
   - component: {fileID: 1991736522}
-  - component: {fileID: 1991736521}
   m_Layer: 0
   m_Name: background layer1 (1)
   m_TagString: MainCamera
@@ -34980,20 +34903,6 @@ Transform:
   m_Father: {fileID: 1477366124}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1991736521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1991736519}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1360cb8deb16ed84eae7e89d8ceb76db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 1275260531}
-  parralaxEffect: 0.3
 --- !u!212 &1991736522
 SpriteRenderer:
   m_ObjectHideFlags: 0
