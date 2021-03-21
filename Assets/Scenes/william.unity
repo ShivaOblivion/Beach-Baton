@@ -225,6 +225,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 512
+  animator: {fileID: 0}
+  spriteRenderer: {fileID: 0}
 --- !u!212 &32000877
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8797,6 +8799,9 @@ GameObject:
   - component: {fileID: 853987251}
   - component: {fileID: 853987250}
   - component: {fileID: 853987249}
+  - component: {fileID: 853987255}
+  - component: {fileID: 853987254}
+  - component: {fileID: 853987253}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -8884,6 +8889,49 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &853987253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853987248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c0567d96c2660248a655bf11cb032c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  moveSpeed: 5
+--- !u!114 &853987254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853987248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69f11b62ef39f5b49a292e044920fb40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tower: {fileID: 0}
+  target: {fileID: 0}
+  speed: 10
+--- !u!114 &853987255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853987248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf04c18af21031e4eb39f17973ccfb8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  deathEffect: {fileID: 0}
 --- !u!1 &1377084884
 GameObject:
   m_ObjectHideFlags: 0
