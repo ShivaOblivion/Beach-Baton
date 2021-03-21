@@ -29,8 +29,9 @@ public class playmove : MonoBehaviour
     void FixedUpdate()
     {
         float horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
+        Flip(rb.velocity.x);
 
-        if(Input.GetAxis("Horizontal")!=0)
+        if (Input.GetAxis("Horizontal")!=0)
         {
             animator.SetBool("isWalking",true);
         }
