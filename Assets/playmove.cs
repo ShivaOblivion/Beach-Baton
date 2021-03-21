@@ -15,8 +15,8 @@ public class playmove : MonoBehaviour
     [Header("Refs")]
     private Rigidbody2D rb;
     private BoxCollider2D box2D;
-
-
+    public Animator animator;
+    public SpriteRenderer spriteRenderer;
 
 
 
@@ -29,6 +29,10 @@ public class playmove : MonoBehaviour
     void FixedUpdate()
     {
         float horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
+
+        float characterVelocity = Mathf.Abs(rb.velocity.x);
+        animator.SetFloat("Speed", characterVelocity);
+
         MovePlayer(horizontalMovement);
     }
 
@@ -63,4 +67,15 @@ public class playmove : MonoBehaviour
 
     }
 
+    void Flip(float _velocity)
+    {
+        if (_velocity > 0.1f)
+        {
+            spriteRenderer.flipX = false;
+        }
+        else if (_velocity < -0.1f)
+        {
+            spriteRenderer.flipX = true;
+        }
+    }
 }
