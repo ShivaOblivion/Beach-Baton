@@ -12,12 +12,14 @@ public class Enemy1 : MonoBehaviour
     public float attackDistance; //Minimun distance for attack
     public float moveSpeed;
     public float timer; //Timer for cooldown between attacks
+    public Transform target;
+    public float distanceDetection;
+    public GameObject player;
     #endregion
 
 
     #region Private Variables
     private RaycastHit2D hit;
-    private GameObject target;
     private Animator anim;
     private float distance; //Store the distance b/w enemy and player
     private bool attackMode;
@@ -36,8 +38,12 @@ public class Enemy1 : MonoBehaviour
     {
         if (inRange)
         {
-            hit = Physics2D.Raycast(raycast.position, Vector2.left, rayCastLenght, raycastMask);
-            RaycastDebugger();
+            distance = Vector3.Distance(target.position, transform.position);
+
+            if (distance < distanceDetection)
+            {
+                Move();
+            }
         }
         
         // When Player is detected
@@ -59,9 +65,8 @@ public class Enemy1 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D trig)
     {
-        if (trig.gameObject.tag == "Player")
+        if (player.gameObject.tag == "Player")
         {
-            target = trig.gameObject;
             inRange = true;
         }
     }
@@ -124,17 +129,7 @@ public class Enemy1 : MonoBehaviour
         anim.SetBool("Attack", false);
     }
 
-    void RaycastDebugger()
-    {
-        if (distance > attackDistance)
-        {
-            Debug.DrawRay(raycast.position, Vector2.left * rayCastLenght, Color.red);
-        }
-        else if (attackDistance > distance)
-        {
-            Debug.DrawRay(raycast.position, Vector2.left * rayCastLenght, Color.green);
-        }
-    }
+    
 
     public void TriggerCooling()
     {
