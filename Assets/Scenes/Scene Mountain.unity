@@ -8771,29 +8771,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1971491928}
   - component: {fileID: 1971491929}
-  - component: {fileID: 1971491926}
   - component: {fileID: 1971491927}
   m_Layer: 0
-  m_Name: tptest2
+  m_Name: tpfrom1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1971491926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1971491925}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e996746273238254898b6129b637fb46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Portal: {fileID: 2054914185}
-  Player: {fileID: 1009994391}
 --- !u!61 &1971491927
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8897,7 +8882,7 @@ GameObject:
   - component: {fileID: 2054914186}
   - component: {fileID: 2054914187}
   m_Layer: 0
-  m_Name: tptest1
+  m_Name: tp1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
