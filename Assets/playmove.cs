@@ -30,8 +30,14 @@ public class playmove : MonoBehaviour
     {
         float horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
 
-        float characterVelocity = Mathf.Abs(rb.velocity.x);
-        animator.SetFloat("Speed", characterVelocity);
+        if(Input.GetAxis("Horizontal")!=0)
+        {
+            animator.SetBool("isWalking",true);
+        }
+        else
+        {
+          animator.SetBool("isWalking",false);  
+        }
 
         MovePlayer(horizontalMovement);
     }
@@ -44,6 +50,8 @@ public class playmove : MonoBehaviour
             rb.AddForce(new Vector2(0f, jumpForce));
             TimeSinceJump = 0.0f;
         }
+        
+        animator.SetBool("isJumping",!IsGrounded()); 
     }
 
 
