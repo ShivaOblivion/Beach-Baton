@@ -8706,7 +8706,7 @@ GameObject:
   m_Component:
   - component: {fileID: 683653438}
   - component: {fileID: 683653439}
-  - component: {fileID: 683653440}
+  - component: {fileID: 683653441}
   m_Layer: 5
   m_Name: healthBar
   m_TagString: Untagged
@@ -8786,7 +8786,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &683653440
+--- !u!114 &683653441
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
