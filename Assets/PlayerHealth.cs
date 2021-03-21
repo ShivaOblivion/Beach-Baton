@@ -13,10 +13,18 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
     }
-
-    public void TakeDamage(int damage)
+    public void update()
     {
-        currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
+        if(Input.GetKeyDown(KeyCode.H))
+        {
+            takeDamage(20);
+        }     
     }
-}
+    public void takeDamage(int damage)
+        {
+            currentHealth -= damage;
+            healthBar.SetHealth(currentHealth);
+        }      
+}   
+    
+   
