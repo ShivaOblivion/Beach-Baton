@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 32000874}
   - component: {fileID: 32000873}
   - component: {fileID: 32000879}
+  - component: {fileID: 32000880}
   m_Layer: 0
   m_Name: characters_1
   m_TagString: Untagged
@@ -309,6 +310,26 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &32000880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32000872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be6a7d28a26427446bb6d5ef19667232, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  attackPoint: {fileID: 0}
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  attackRange: 0.5
+  attackDamage: 1
+  attackRate: 1
 --- !u!1 &324494289
 GameObject:
   m_ObjectHideFlags: 0
@@ -43081,6 +43102,7 @@ GameObject:
   - component: {fileID: 1792390572}
   - component: {fileID: 1792390571}
   - component: {fileID: 1792390574}
+  - component: {fileID: 1792390575}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Player
@@ -43184,6 +43206,19 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &1792390575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792390570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33fe23bcf6e1da747b5cb5c144620b1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 32000878}
 --- !u!1 &1801227800
 GameObject:
   m_ObjectHideFlags: 0
