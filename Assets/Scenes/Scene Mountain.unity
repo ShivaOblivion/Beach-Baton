@@ -8890,7 +8890,7 @@ GameObject:
   - component: {fileID: 1009994393}
   - component: {fileID: 1009994392}
   m_Layer: 0
-  m_Name: characters_1
+  m_Name: Beta-characters_1
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8904,7 +8904,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1009994391}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 267b2b4cabb3aa7459cb539288da27ef, type: 2}
   m_CullingMode: 0
@@ -8997,6 +8997,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 512
+  animator: {fileID: 1009994392}
+  spriteRenderer: {fileID: 0}
 --- !u!212 &1009994397
 SpriteRenderer:
   m_ObjectHideFlags: 0
