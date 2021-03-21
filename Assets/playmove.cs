@@ -16,6 +16,10 @@ public class playmove : MonoBehaviour
     private Rigidbody2D rb;
     private BoxCollider2D box2D;
 
+
+
+
+
     private void Start()
     {
         box2D = GetComponent<BoxCollider2D>();
