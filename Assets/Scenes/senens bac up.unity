@@ -131,13 +131,13 @@ GameObject:
   m_Component:
   - component: {fileID: 32000878}
   - component: {fileID: 32000877}
-  - component: {fileID: 32000876}
   - component: {fileID: 32000875}
   - component: {fileID: 32000874}
   - component: {fileID: 32000873}
   - component: {fileID: 32000879}
-  - component: {fileID: 32000880}
   - component: {fileID: 32000881}
+  - component: {fileID: 32000880}
+  - component: {fileID: 32000876}
   m_Layer: 10
   m_Name: characters_1
   m_TagString: Player
@@ -217,18 +217,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 32000872}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 457c31d150648764e873535d2f49c0bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 4c1dd15494be8594488ee5efb00ce36b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 190
-  CooldownJump: 1
-  distanceCheckGrounded: 0.7
-  jumpForce: 320
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 512
-  animator: {fileID: 32000879}
-  spriteRenderer: {fileID: 32000877}
+  maxHealth: 100
+  currentHealth: 0
+  healthBar: {fileID: 0}
 --- !u!212 &32000877
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -323,17 +317,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 32000872}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be6a7d28a26427446bb6d5ef19667232, type: 3}
+  m_Script: {fileID: 11500000, guid: a1fc59e0e1eeae54eb213d95432abe6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 32000879}
-  attackPoint: {fileID: 1070774628}
+  animator: {fileID: 0}
+  attackPoint: {fileID: 0}
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 0
   attackRange: 0.5
-  attackDamage: 1
-  attackRate: 1
+  attackDamage: 40
+  attackRate: 2
 --- !u!114 &32000881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,12 +337,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 32000872}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c1dd15494be8594488ee5efb00ce36b, type: 3}
+  m_Script: {fileID: 11500000, guid: 457c31d150648764e873535d2f49c0bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 3
-  currentHealth: 3
-  healthBar: {fileID: 683653440}
+  moveSpeed: 0
+  CooldownJump: 5
+  distanceCheckGrounded: 0.5
+  jumpForce: 0
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  animator: {fileID: 0}
+  spriteRenderer: {fileID: 0}
 --- !u!1 &324494289
 GameObject:
   m_ObjectHideFlags: 0
@@ -43210,7 +43210,6 @@ GameObject:
   - component: {fileID: 1733370658}
   - component: {fileID: 1733370657}
   - component: {fileID: 1733370659}
-  - component: {fileID: 1733370660}
   - component: {fileID: 1733370661}
   m_Layer: 11
   m_Name: slime1
@@ -43303,20 +43302,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1733370660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1733370656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf04c18af21031e4eb39f17973ccfb8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 1
-  deathEffect: {fileID: 0}
 --- !u!61 &1733370661
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43471,7 +43456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33fe23bcf6e1da747b5cb5c144620b1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 32000878}
+  target: {fileID: 0}
 --- !u!1 &1801227800
 GameObject:
   m_ObjectHideFlags: 0
@@ -101332,7 +101317,6 @@ GameObject:
   - component: {fileID: 2077780949}
   - component: {fileID: 2077780948}
   - component: {fileID: 2077780947}
-  - component: {fileID: 2077780950}
   - component: {fileID: 2077780951}
   m_Layer: 11
   m_Name: slime2
@@ -101425,20 +101409,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2077780950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2077780946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf04c18af21031e4eb39f17973ccfb8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 1
-  deathEffect: {fileID: 0}
 --- !u!61 &2077780951
 BoxCollider2D:
   m_ObjectHideFlags: 0

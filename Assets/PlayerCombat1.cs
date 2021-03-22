@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Timeline;
 
-public class PlayerCombat : MonoBehaviour
+public class PlayerCombat1 : MonoBehaviour
 {
     public Animator animator;
 
